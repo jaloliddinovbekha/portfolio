@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+
+}
+
+body{
+    background-color:#000;
+    /* c  */
+}
+
+.container{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.container span{
+    display: block;
+
+}
+
+.text-1{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;   /* hariflar orasini ochadi*/
+    margin-bottom: 20px;
+    background-color: black;
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text-2{
+    font-size: 30px;
+    color: #6ab06a;
+}
+/* ********************************** */
+nav{
+    background:#0000ff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    color: white;
+    /* text-decoration: none; */
+    font-size: 35px;
+}
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+        
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+        
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+        
+    }
+}
+
+@media(max-width:500px){
+    body .container .text-1{
+        font-size: 40px;
+        /* letter-spacing: 6px; */
+        font-weight: 500;  
+        
+    }
+    
+  
+    body .container .text-2{
+        font-size: 25px;
+    }
+    nav a{
+        font-size: 30px;
+    }
+}
+@media(max-width:364px){
+    body .container .text-1{
+        font-size: 30px;
+        /* letter-spacing: 4px;   */
+        font-weight: 50;
+    }
+    body .container .text-2{
+        font-size: 20px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+   
+}
+@media(max-width:296px){
+    body .container .text-1{
+        font-size: 25px;
+        /* letter-spacing: 4px;   */
+        /* font-weight: 50; */
+    }
+    nav a{
+        font-size: 18px;
+    }
+}
+@media(max-width:264px){
+    body .container .text-1{
+        font-size: 22px;
+        /* letter-spacing: 4px;   */
+        font-weight: 20;
+    }
+    nav a{
+        font-size: 15px;
+    }
+}
