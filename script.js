@@ -39,6 +39,7 @@ window.addEventListener('DOMContentLoaded', function () {
         navItem.addEventListener('click', () => {
             menuBtn.classList.remove('active')/* x menu knopkasiga ozgarmidi va menu knopkasi chotkiy chiqmidi buni kamentga yoki ochirse yoki yozmase */
             navigation.classList.remove('active')/* linkga click qise menu yopilmidi buni kamentga yoki ochirse yoki yozmase */
+            menuBtn2.classList.remove('active')
         })
     })
 
